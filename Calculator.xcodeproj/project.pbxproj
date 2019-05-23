@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D36C2BD2290699000824958 /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36C2BC2290699000824958 /* CalculatorLogic.swift */; };
 		8D4EEB9A228747780013375F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4EEB99228747780013375F /* AppDelegate.swift */; };
 		8D4EEB9C228747780013375F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4EEB9B228747780013375F /* ViewController.swift */; };
 		8D4EEB9F228747780013375F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4EEB9D228747780013375F /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D36C2BC2290699000824958 /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
 		8D4EEB96228747780013375F /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4EEB99228747780013375F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D4EEB9B228747780013375F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D36C2B82290694C00824958 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D4EEB9D228747780013375F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D36C2B92290695900824958 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D4EEB9B228747780013375F /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8D36C2BE2290699600824958 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D36C2BC2290699000824958 /* CalculatorLogic.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		8D4EEB8D228747770013375F = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				8D4EEB99228747780013375F /* AppDelegate.swift */,
-				8D4EEB9B228747780013375F /* ViewController.swift */,
-				8D4EEB9D228747780013375F /* Main.storyboard */,
+				8D36C2B92290695900824958 /* Controller */,
+				8D36C2BE2290699600824958 /* Model */,
+				8D36C2B82290694C00824958 /* View */,
 				8D4EEBA32287477A0013375F /* Assets.xcassets */,
 				8D4EEBA52287477A0013375F /* LaunchScreen.storyboard */,
 				8D4EEBA82287477A0013375F /* Info.plist */,
@@ -99,6 +126,7 @@
 				TargetAttributes = {
 					8D4EEB95228747770013375F = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -138,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D36C2BD2290699000824958 /* CalculatorLogic.swift in Sources */,
 				8D4EEB9C228747780013375F /* ViewController.swift in Sources */,
 				8D4EEB9A228747780013375F /* AppDelegate.swift in Sources */,
 				8D4EEBA2228747780013375F /* Calculator.xcdatamodeld in Sources */,
@@ -293,7 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Reigny-Seasons.Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -311,7 +340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Reigny-Seasons.Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
